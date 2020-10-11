@@ -236,7 +236,6 @@ T.Image = "rbxassetid://2715138063"
 T.ImageColor3 = Color3.new(0, 0, 0)
 T.ImageTransparency = 0.75
 
-local blur
 Dialog.Changed:Connect(function()
 	if Dialog.Position.Y.Scale == 1 then
 		Dialog.Visible = false
