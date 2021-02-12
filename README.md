@@ -18,4 +18,4 @@ This script will forever be open-sourced.
   
 - Upcoming Features
   - Semi-Insta Win
-  - 
+  - Silent Aim
