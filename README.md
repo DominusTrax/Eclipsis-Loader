@@ -9,6 +9,7 @@ This script will forever be open-sourced.
 - Main Functions
   - Player Gun Detection
   - Gun Modification
+  - Aimbot
 
 - ESP Functions
   - Player ESP
