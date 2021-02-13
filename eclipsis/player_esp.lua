@@ -31,9 +31,7 @@ end
 for i,v in pairs(game.Players:GetPlayers()) do
   if v.TeamColor ~= Player.TeamColor then
       ESP(v.Character)
-    else
-      print("[Player ESP]: Why would we use ESP on your player now?")
-    end
+  end
 end
 
 RunServ:BindToRenderStep("UpdatePlrESP", Enum.RenderPriority.Character.Value, function()
