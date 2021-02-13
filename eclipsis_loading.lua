@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/3gQQtaKX"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DominusTrax/Eclipsis-Loader/main/uilib/library.lua"))()
 
 -- Starts a new UI
 local EclipsisWindow = Library:CreateTab("Eclipsis")
