@@ -3,7 +3,7 @@
 
 if game.CoreGui:FindFirstChild("PlayerESP") then
 else
-    local Folder = Instance.new("Folder")
+    local Folder = Instance.new("Folder",game.CoreGui)
     Folder.Name = "PlayerESP"
 end
 
@@ -12,7 +12,7 @@ local RunServ = game:GetService("RunService")
 
 function ESP(object)
   
-  for i,v in pairs(Folder:GetChildren()) do
+  for i,v in pairs(game.CoreGui.PlayerESP:GetChildren()) do
       v:Destroy()
   end)
   
