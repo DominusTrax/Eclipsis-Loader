@@ -23,6 +23,12 @@ Main:CreateButton("Spawn ESP", function()
     loadstring(game:GetHttp("https://raw.githubusercontent.com/DominusTrax/Eclipsis-Loader/main/eclipsis/spawn_esp.lua"))()
 end)
 
+--[[
+Main:CreateButton("Insta Win", function()
+    print("["Insta Win]: Loading...")
+end)
+]]
+
 Main:CreateToggle("Infinite Jetpack", function(enabled)
     if enabled then 
         print(enabled)
