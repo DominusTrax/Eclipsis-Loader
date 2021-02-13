@@ -14,11 +14,13 @@ local GunSection = EclipsisWindow:CreateSection("Gun Section")
 -- Everything below is basically common knowledge.
 
 Main:CreateButton("Player ESP", function()
-    print("Pushed PlrESP")
+    -- Fetches the script, yes this is lazy.
+    loadstring(game:GetHttp("https://raw.githubusercontent.com/DominusTrax/Eclipsis-Loader/main/eclipsis/player_esp.lua"))()
 end)
 
 Main:CreateButton("Spawn ESP", function()
-    print("Pushed SpawnESP")
+    -- Fetches the script, yes this is lazy...yet again.
+    loadstring(game:GetHttp("https://raw.githubusercontent.com/DominusTrax/Eclipsis-Loader/main/eclipsis/spawn_esp.lua"))()
 end)
 
 Main:CreateToggle("Infinite Jetpack", function(enabled)
