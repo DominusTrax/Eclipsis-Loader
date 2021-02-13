@@ -2,14 +2,13 @@
 -- 2/12/2021
 
 if game.CoreGui:FindFirstChild("PlayerESP") then
-  return print("[Player ESP]: You already executed the Player ESP!")
+else
+    local Folder = Instance.new("Folder")
+    Folder.Name = "PlayerESP"
 end
 
 local Player = game.Players.LocalPlayer
 local RunServ = game:GetService("RunService")
-
-local Folder = Instance.new("Folder", game.CoreGui)
-Folder.Name = "PlayerESP"
 
 function ESP(object)
   
