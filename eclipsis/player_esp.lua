@@ -6,12 +6,19 @@ if game.CoreGui:FindFirstChild("PlayerESP") then
 end
 
 local Player = game.Players.LocalPlayer
+local RunServ = game:GetService("RunService")
 
 local Folder = Instance.new("Folder", game.CoreGui)
 Folder.Name = "PlayerESP"
 
 function ESP(object)
+  
+  for i,v in pairs(Folder:GetChildren()) do
+      v:Destroy()
+  end)
+  
   local Box = Instance.new("BoxHandleAdornment")
+  Box.Name = object.Name
   Box.Size = Vector3.new(1.6, 1.9, 0.8)
   Box.Adornee = object.HumanoidRootPart
   Box.AlwaysOnTop = true
@@ -28,3 +35,10 @@ for i,v in pairs(game.Players:GetPlayers()) do
       print("[Player ESP]: Why would we use ESP on your player now?")
     end
 end
+
+RunServ:BindToRenderStep("UpdatePlrESP", Enum.RenderPriority.Character.Value, function()
+    for i,v in next, game.Players:GetPlayers() do
+      if v ~= Player then
+        ESP(object)
+    end
+end)
