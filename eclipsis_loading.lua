@@ -1,3 +1,5 @@
+-- All the scripts here except for the UI are all of Derpy Lua's work, anyone else claiming it to be their own is literally braindead.
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DominusTrax/Eclipsis-Loader/main/uilib/library.lua"))()
 
 -- Starts a new UI
