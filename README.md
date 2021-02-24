@@ -1,7 +1,7 @@
 # Eclipsis Script
 Please notice that this script was originally made back in early 2020 although I am back and updating it in 2021.
 
-This script will forever be open-sourced.
+This script will forever be open-sourced although if you plan on using it for a script hub or using any part of my code, you must include credits.
 
 
 ## Script Functions
